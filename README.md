@@ -1,5 +1,5 @@
 # Лабораторная работа №3
-## Аксентьев МАкисм ИУ8-22
+## Аксентьев Макисм ИУ8-22
 ## Подготовка
 ```bash
 git clone https://github.com/tp-labs/lab03 tmp
@@ -197,4 +197,76 @@ x1 = -3.000000
 -------------------------
 x2 = -2.000000
 -------------------------
+```
+## Отправка на github
+```bash
+rm -rf _build
+git add .
+git status
+```
+```bash
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   CMakeLists.txt
+	new file:   LICENSE
+	new file:   README.md
+	new file:   formatter_ex_lib/CMakeLists.txt
+	new file:   formatter_ex_lib/formatter_ex.cpp
+	new file:   formatter_ex_lib/formatter_ex.h
+	new file:   formatter_lib/CMakeLists.txt
+	new file:   formatter_lib/formatter.cpp
+	new file:   formatter_lib/formatter.h
+	new file:   hello_world_application/CMakeLists.txt
+	new file:   hello_world_application/hello_world.cpp
+	new file:   preview.png
+	new file:   solver_application/CMakeLists.txt
+	new file:   solver_application/equation.cpp
+	new file:   solver_lib/CMakeLists.txt
+	new file:   solver_lib/solver.cpp
+	new file:   solver_lib/solver.h
+```
+```bash
+git commit -m "Lab3: CMake build system with libraries and applications"
+```
+```bash
+[main (root-commit) 5cc89d6] Lab3: CMake build system with libraries and applications
+ 17 files changed, 549 insertions(+)
+ create mode 100644 CMakeLists.txt
+ create mode 100644 LICENSE
+ create mode 100644 README.md
+ create mode 100644 formatter_ex_lib/CMakeLists.txt
+ create mode 100644 formatter_ex_lib/formatter_ex.cpp
+ create mode 100644 formatter_ex_lib/formatter_ex.h
+ create mode 100644 formatter_lib/CMakeLists.txt
+ create mode 100644 formatter_lib/formatter.cpp
+ create mode 100644 formatter_lib/formatter.h
+ create mode 100644 hello_world_application/CMakeLists.txt
+ create mode 100644 hello_world_application/hello_world.cpp
+ create mode 100644 preview.png
+ create mode 100644 solver_application/CMakeLists.txt
+ create mode 100644 solver_application/equation.cpp
+ create mode 100644 solver_lib/CMakeLists.txt
+ create mode 100644 solver_lib/solver.cpp
+ create mode 100644 solver_lib/solver.h
+```
+```bash
+git push -u origin main
+```
+```bash
+Username for 'https://github.com': maksnn78
+Password for 'https://maksnn78@github.com': 
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (24/24), 1.01 MiB | 5.68 MiB/s, done.
+Total 24 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/maksnn78/lab3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
 ```
